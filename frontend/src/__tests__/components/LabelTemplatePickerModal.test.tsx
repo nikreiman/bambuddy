@@ -392,6 +392,8 @@ describe('LabelTemplatePickerModal', () => {
       'box_62x29',
       'avery_l7160',
       'avery_5160',
+      'avery_5162',
+      'a4_105x40',
     ]);
     expect(screen.getByRole('button', { name: /Cancel/i })).toBeInTheDocument();
     expect(screen.getByTestId('label-template-picker-panel')).toHaveClass('max-h-[90vh]');

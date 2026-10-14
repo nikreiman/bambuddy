@@ -4588,9 +4588,17 @@ export default {
           label: 'Avery L7160 — A4 시트 (38.1 × 63.5 mm × 21)',
           hint: 'EU 시트; A4 페이지당 21개 라벨.'
         },
+        a4105x40: {
+          label: 'A4 시트 (105 × 40 mm × 14)',
+          hint: 'A4 시트; 페이지당 14개 라벨.'
+        },
         avery5160: {
           label: 'Avery 5160 — US Letter 시트 (25.4 × 66.7 mm × 30)',
           hint: 'US 시트; Letter 페이지당 30개 라벨.'
+        },
+        avery5162: {
+          label: 'Avery 5162 — US Letter 시트 (33.9 × 101.6 mm × 14)',
+          hint: 'US 시트 (4 × 1⅓ 인치); Letter 페이지당 14개 라벨.'
         },
         amsHolderSmall: {
           label: 'AMS 홀더 — 소형 (74 × 33 mm)',

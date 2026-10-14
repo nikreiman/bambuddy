@@ -4880,9 +4880,17 @@ export default {
           label: 'Avery L7160 — A4 sheet (38.1 × 63.5 mm × 21)',
           hint: 'EU sheet stock; 21 labels per A4 page.',
         },
+        a4105x40: {
+          label: 'A4 sheet (105 × 40 mm × 14)',
+          hint: 'A4 sheet stock; 14 labels per page.',
+        },
         avery5160: {
           label: 'Avery 5160 — US Letter sheet (25.4 × 66.7 mm × 30)',
           hint: 'US sheet stock; 30 labels per Letter page.',
+        },
+        avery5162: {
+          label: 'Avery 5162 — US Letter sheet (33.9 × 101.6 mm × 14)',
+          hint: 'US sheet stock (4 × 1⅓ in); 14 labels per Letter page.',
         },
       },
     },

@@ -1,6 +1,6 @@
 """PDF spool label rendering.
 
-Six fixed templates:
+Eight fixed templates:
 
 - ``ams_holder_74x33`` — 74×33 mm single label, matches the printable label
   STL bundled with the Makerworld AMS Filament Label Holder (model 752566).
@@ -13,7 +13,9 @@ Six fixed templates:
 - ``box_62x29``  — 62×29 mm single label, sized for Brother PT/QL and Dymo
   generic small labels. One label per page.
 - ``avery_5160`` — US Letter sheet, 25.4×66.7 mm × 30 per sheet.
+- ``avery_5162`` — US Letter sheet, 101.6×33.8 mm × 14 per sheet. Also sold as Avery 8162 or Avery 5522.
 - ``avery_l7160`` — A4 sheet, 38.1×63.5 mm × 21 per sheet.
+- ``a4_105x40`` — A4 sheet, 105×40 mm × 14 per sheet.
 
 The legacy ``ams_30x15`` preset (#809) was incorrect — the original 30×15 mm
 dimension didn't fit any documented variant of model 752566. Replaced by the
@@ -56,7 +58,9 @@ TemplateName = Literal[
     "box_40x30",
     "box_62x29",
     "avery_5160",
+    "avery_5162",
     "avery_l7160",
+    "a4_105x40",
 ]
 
 
@@ -503,7 +507,9 @@ _SINGLE_LABEL_SIZES_MM: dict[str, tuple[float, float]] = {
 #                              col_gap_mm, row_gap_mm)
 _SHEET_TEMPLATES: dict[str, tuple] = {
     "avery_5160": (letter, 66.675, 25.4, 3, 10, 12.7, 4.76, 3.175, 0.0),
+    "avery_5162": (letter, 101.6, 33.782, 2, 7, 21.082, 3.969, 4.763, 0.0),
     "avery_l7160": (A4, 63.5, 38.1, 3, 7, 15.15, 7.0, 2.5, 0.0),
+    "a4_105x40": (A4, 105.0, 42.0, 2, 7, 2.5, 0.0, 0.0, 0.0),
 }
 
 

@@ -71,7 +71,9 @@ class TestLocalInventoryLabels:
             "ams_holder_75x55",
             "box_62x29",
             "avery_5160",
+            "avery_5162",
             "avery_l7160",
+            "a4_105x40",
         ):
             resp = await async_client.post(
                 "/api/v1/inventory/labels",
@@ -264,7 +266,14 @@ class TestValidation:
     @pytest.mark.integration
     @pytest.mark.parametrize(
         ("template", "starting_position"),
-        (("avery_5160", 0), ("avery_5160", 31), ("avery_l7160", 22), ("box_62x29", 2)),
+        (
+            ("avery_5160", 0),
+            ("avery_5160", 31),
+            ("avery_l7160", 22),
+            ("a4_105x40", 15),
+            ("avery_5162", 15),
+            ("box_62x29", 2),
+        ),
     )
     async def test_invalid_starting_position_rejected(
         self,

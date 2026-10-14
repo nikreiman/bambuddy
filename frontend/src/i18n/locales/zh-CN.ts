@@ -4831,9 +4831,17 @@ export default {
           label: 'Avery L7160 — A4 sheet (38.1 × 63.5 mm × 21)',
           hint: '欧洲规格纸张；每张 A4 页 21 个标签。',
         },
+        a4105x40: {
+          label: 'A4 纸张 (105 × 40 mm × 14)',
+          hint: 'A4 规格纸张；每页 14 个标签。',
+        },
         avery5160: {
           label: 'Avery 5160 — US Letter sheet (25.4 × 66.7 mm × 30)',
           hint: '美国规格纸张；每张 Letter 页 30 个标签。',
+        },
+        avery5162: {
+          label: 'Avery 5162 — US Letter 纸张 (33.9 × 101.6 mm × 14)',
+          hint: '美国规格纸张（4 × 1⅓ 英寸）；每张 Letter 页 14 个标签。',
         },
       },
     },

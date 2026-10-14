@@ -4880,9 +4880,17 @@ export default {
           label: 'Avery L7160 — A4-vel (38,1 × 63,5 mm × 21)',
           hint: 'EU-vellen; 21 labels per A4-pagina.',
         },
+        a4105x40: {
+          label: 'A4-vel (105 × 40 mm × 14)',
+          hint: 'A4-vellen; 14 labels per pagina.',
+        },
         avery5160: {
           label: 'Avery 5160 — US Letter-vel (25,4 × 66,7 mm × 30)',
           hint: 'Amerikaanse vellen; 30 labels per Letter-pagina.',
+        },
+        avery5162: {
+          label: 'Avery 5162 — US Letter-vel (33,9 × 101,6 mm × 14)',
+          hint: 'Amerikaanse vellen (4 × 1⅓ inch); 14 labels per Letter-pagina.',
         },
       },
     },

@@ -4844,9 +4844,17 @@ export default {
           label: 'Avery L7160 — A4 sheet (38.1 × 63.5 mm × 21)',
           hint: 'EUシート規格、A4ページに21枚のラベル。',
         },
+        a4105x40: {
+          label: 'A4シート (105 × 40 mm × 14)',
+          hint: 'A4シート規格、1ページに14枚のラベル。',
+        },
         avery5160: {
           label: 'Avery 5160 — US Letter sheet (25.4 × 66.7 mm × 30)',
           hint: '米国シート規格、Letterページに30枚のラベル。',
+        },
+        avery5162: {
+          label: 'Avery 5162 — US Letterシート (33.9 × 101.6 mm × 14)',
+          hint: '米国シート規格（4 × 1⅓ インチ）、Letterページに14枚のラベル。',
         },
       },
     },

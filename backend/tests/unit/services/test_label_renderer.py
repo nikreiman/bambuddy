@@ -5,7 +5,7 @@ from __future__ import annotations
 from unittest.mock import patch
 
 import pytest
-from reportlab.lib.pagesizes import letter
+from reportlab.lib.pagesizes import A4, letter
 from reportlab.lib.units import mm
 
 from backend.app.services.label_renderer import LabelData, render_labels
@@ -16,7 +16,9 @@ ALL_TEMPLATES = (
     "box_40x30",
     "box_62x29",
     "avery_5160",
+    "avery_5162",
     "avery_l7160",
+    "a4_105x40",
 )
 
 
@@ -124,7 +126,14 @@ def test_sheet_starting_position_resets_on_second_page():
 
 @pytest.mark.parametrize(
     ("template", "starting_position"),
-    (("avery_5160", 0), ("avery_5160", 31), ("avery_l7160", 22), ("box_62x29", 2)),
+    (
+        ("avery_5160", 0),
+        ("avery_5160", 31),
+        ("avery_l7160", 22),
+        ("a4_105x40", 15),
+        ("avery_5162", 15),
+        ("box_62x29", 2),
+    ),
 )
 def test_invalid_starting_position_raises(template, starting_position):
     with pytest.raises(ValueError, match="Starting position"):

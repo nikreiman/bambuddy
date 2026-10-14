@@ -77,11 +77,25 @@ const TEMPLATE_OPTIONS: TemplateOption[] = [
     fallbackLabel: 'Avery 5160 — US Letter sheet (25.4 × 66.7 mm × 30)',
     fallbackHint: 'US sheet stock; 30 labels per Letter page.',
   },
+  {
+    value: 'avery_5162',
+    i18nKey: 'avery5162',
+    fallbackLabel: 'Avery 5162 — US Letter sheet (33.9 × 101.6 mm × 14)',
+    fallbackHint: 'US sheet stock; 14 labels per Letter page.',
+  },
+  {
+    value: 'a4_105x40',
+    i18nKey: 'a4105x40',
+    fallbackLabel: 'A4 sheet (105 × 40 mm × 14)',
+    fallbackHint: 'A4 sheet stock; 14 labels per page.',
+  },
 ];
 
 const SHEET_CAPACITIES: Partial<Record<SpoolLabelTemplate, number>> = {
   avery_l7160: 21,
   avery_5160: 30,
+  avery_5162: 14,
+  a4_105x40: 14,
 };
 
 type OutputFormat = 'pdf' | 'png';

@@ -4832,9 +4832,17 @@ export default {
           label: 'Avery L7160 — A4 sayfa (38.1 × 63.5 mm × 21)',
           hint: 'AB sayfa stoğu; A4 sayfa başına 21 etiket.',
         },
+        a4105x40: {
+          label: 'A4 sayfa (105 × 40 mm × 14)',
+          hint: 'A4 sayfa stoğu; sayfa başına 14 etiket.',
+        },
         avery5160: {
           label: 'Avery 5160 — US Letter sayfa (25.4 × 66.7 mm × 30)',
           hint: 'ABD sayfa stoğu; Letter sayfası başına 30 etiket.',
+        },
+        avery5162: {
+          label: 'Avery 5162 — US Letter sayfa (33.9 × 101.6 mm × 14)',
+          hint: 'ABD sayfa stoğu (4 × 1⅓ inç); Letter sayfası başına 14 etiket.',
         },
       },
     },

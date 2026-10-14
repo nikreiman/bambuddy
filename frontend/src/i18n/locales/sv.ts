@@ -4879,9 +4879,17 @@ errors: {
           label: 'Avery L7160 — A4-ark (38,1 × 63,5 mm × 21)',
           hint: 'EU-ark; 21 etiketter per A4-sida.',
         },
+        a4105x40: {
+          label: 'A4-ark (105 × 40 mm × 14)',
+          hint: 'A4-ark; 14 etiketter per sida.',
+        },
         avery5160: {
           label: 'Avery 5160 — US Letter-ark (25,4 × 66,7 mm × 30)',
           hint: 'US-ark; 30 etiketter per Letter-sida.',
+        },
+        avery5162: {
+          label: 'Avery 5162 — US Letter-ark (33,9 × 101,6 mm × 14)',
+          hint: 'US-ark (4 × 1⅓ tum); 14 etiketter per Letter-sida.',
         },
       },
     },

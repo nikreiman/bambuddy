@@ -4844,9 +4844,17 @@ export default {
           label: 'Avery L7160 — A4 sheet (38.1 × 63.5 mm × 21)',
           hint: 'EU-Bogenformat; 21 Etiketten pro A4-Seite.',
         },
+        a4105x40: {
+          label: 'A4-Bogen (105 × 40 mm × 14)',
+          hint: 'A4-Bogenformat; 14 Etiketten pro Seite.',
+        },
         avery5160: {
           label: 'Avery 5160 — US Letter sheet (25.4 × 66.7 mm × 30)',
           hint: 'US-Bogenformat; 30 Etiketten pro Letter-Seite.',
+        },
+        avery5162: {
+          label: 'Avery 5162 — US-Letter-Bogen (33,9 × 101,6 mm × 14)',
+          hint: 'US-Bogenformat (4 × 1⅓ Zoll); 14 Etiketten pro Letter-Seite.',
         },
       },
     },

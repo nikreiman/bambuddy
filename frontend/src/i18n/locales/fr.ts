@@ -4832,9 +4832,17 @@ export default {
           label: 'Avery L7160 — A4 sheet (38.1 × 63.5 mm × 21)',
           hint: 'Format de feuille UE ; 21 étiquettes par page A4.',
         },
+        a4105x40: {
+          label: 'Feuille A4 (105 × 40 mm × 14)',
+          hint: 'Format de feuille A4 ; 14 étiquettes par page.',
+        },
         avery5160: {
           label: 'Avery 5160 — US Letter sheet (25.4 × 66.7 mm × 30)',
           hint: 'Format de feuille US ; 30 étiquettes par page Letter.',
+        },
+        avery5162: {
+          label: 'Avery 5162 — feuille US Letter (33,9 × 101,6 mm × 14)',
+          hint: 'Format de feuille US (4 × 1⅓ po) ; 14 étiquettes par page Letter.',
         },
       },
     },
