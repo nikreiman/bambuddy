@@ -309,7 +309,9 @@ def _draw_label(
       Large spool ID anchored at bottom-left under the swatch so it stays
       readable at arm's length.
     """
-    pad = 1.2 * mm
+    is_tight = h < 20 * mm
+    # The tight layout is shorter than twice the margin, so it keeps a small pad.
+    pad = 1.2 * mm if is_tight else LABEL_INNER_MARGIN_MM * mm
     inner_x, inner_y = x + pad, y + pad
     inner_w = w - 2 * pad
     inner_h = h - 2 * pad
@@ -318,8 +320,6 @@ def _draw_label(
     c.setStrokeColor(HexColor(0xCCCCCC))
     c.setLineWidth(0.4)
     c.rect(x, y, w, h, stroke=1, fill=0)
-
-    is_tight = h < 20 * mm
 
     if is_tight:
         _draw_label_tight(c, x, y, w, h, inner_x, inner_y, inner_w, inner_h, pad, data, monochrome, fields)
@@ -494,6 +494,9 @@ def _draw_label_roomy(
 
 # ── Template entry points ────────────────────────────────────────────────────
 
+# Inner margin between a label's edge and its content.
+LABEL_INNER_MARGIN_MM = 10.0
+
 # (label_w_mm, label_h_mm) for single-label-per-page templates.
 _SINGLE_LABEL_SIZES_MM: dict[str, tuple[float, float]] = {
     "ams_holder_74x33": (74.0, 33.0),
@@ -509,7 +512,7 @@ _SHEET_TEMPLATES: dict[str, tuple] = {
     "avery_5160": (letter, 66.675, 25.4, 3, 10, 12.7, 4.76, 3.175, 0.0),
     "avery_5162": (letter, 101.6, 33.782, 2, 7, 21.082, 3.969, 4.763, 0.0),
     "avery_l7160": (A4, 63.5, 38.1, 3, 7, 15.15, 7.0, 2.5, 0.0),
-    "a4_105x40": (A4, 105.0, 42.0, 2, 7, 2.5, 0.0, 0.0, 0.0),
+    "a4_105x40": (A4, 105.0, 40.0, 2, 7, 2, 0.0, 0.0, 2.0),
 }
 
 
